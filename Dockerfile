@@ -34,8 +34,8 @@ RUN git -c advice.detachedHead=false \
     rm -rf /libosmium
 
 RUN git -c advice.detachedHead=false \
-    clone --single-branch --depth 1 -b v0.1.0 \
-    https://github.com/pnorman/osmborder.git && \
+    clone --single-branch --depth 1 -b boundary_type_maritime \
+    https://github.com/trailbehind/osmborder.git && \
     cd osmborder && \
     mkdir build && \
     cd build && \
