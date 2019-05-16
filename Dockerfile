@@ -9,7 +9,7 @@ RUN apt-get -q update && \
     rm -rf /var/lib/apt/ /var/cache/apt/ /var/cache/debconf/    
 
 RUN git -c advice.detachedHead=false \
-    clone --single-branch --depth 1 -b v1.6.3 \
+    clone --single-branch --depth 1 -b v1.6.7 \
     https://github.com/mapbox/protozero.git && \
     cd protozero && \
     mkdir build && \
@@ -21,7 +21,7 @@ RUN git -c advice.detachedHead=false \
     rm -rf /protozero
 
 RUN git -c advice.detachedHead=false \
-    clone --single-branch --depth 1 -b v2.14.0 \
+    clone --single-branch --depth 1 -b v2.15.1 \
     https://github.com/osmcode/libosmium.git && \
     cd libosmium && \
     mkdir build && \
