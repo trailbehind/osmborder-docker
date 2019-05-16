@@ -29,7 +29,6 @@ RUN git -c advice.detachedHead=false \
     cmake .. && \
     make && \
     make install && \
-    cp -r /libosmium/include/utf8* /usr/local/include/ && \
     cd && \
     rm -rf /libosmium
 
