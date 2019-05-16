@@ -1,6 +1,7 @@
-from ubuntu:16.04
+from ubuntu:18.04
 
 #install prerequisites
+ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get -q update && \
     apt-get -q -y install git wget curl build-essential cmake osmium-tool s3cmd awscli \
     zlib1g-dev libbz2-dev libboost-all-dev libicu-dev && \
